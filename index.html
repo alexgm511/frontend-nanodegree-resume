@@ -1,27 +1,14 @@
 <!DOCTYPE html>
 <head>
-  <!-- This tells the browser how to read the document. -->
   <meta charset="utf-8">
-
-  <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
-
-  <!-- Load the page styles. -->
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  
+  <link href="css/style.css" rel="stylesheet">
   <!-- Load the Google font link styles. -->
   <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-
-  <!-- Load jQuery library -->
   <script src="js/jQuery.js"></script>
-
-  <!-- Load helper.js file -->
-  <script src="js/helper.js"></script>
-  
   <!-- Load Google map code -->
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body unresolved>
   <div id="main">
@@ -52,33 +39,5 @@
 
   <!-- Load resumeBuilder file -->
   <script src="js/resumeBuilder.js"></script>
-
-
-  <!-- JavaScript that tests if there is any content to display it. -->
-  <script type="text/javascript">
-	
-    if(document.getElementsByClassName('flex-item').length === 0) {
-		document.getElementById('topContacts').style.display = 'none';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-		document.getElementById('header').style.display = 'none';
-    }
-	if(document.getElementsByClassName('work-entry').length === 0) {
-		document.getElementById('workExperience').style.display = 'none';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-		document.getElementById('projects').style.display = 'none';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-		document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-		document.getElementById('letsConnect').style.display = 'none';
-    }
-	if(document.getElementById('map') === null) {
-		document.getElementById('mapDiv').style.display = 'none';
-    }
-
-  </script>
 </body>
 </html>
