@@ -2,8 +2,8 @@ $(function(){
     var model = {
 		bio: {
 			"name": "Alex G Mendoza",
-			"role": "WEB DEVELOPER",
-			"welcomeMessage": "Web Developer with a Design background and 15+ years of programming experience!",
+			"role": "WEB&nbsp;DEVELOPER",
+			"welcomeMessage": "Web Developer with a Design background<br> and 15+ years of programming experience!",
 			"contacts": {
 				"mobile": "410-861-7064",
 				"email": "alex@alexgmendoza.com",

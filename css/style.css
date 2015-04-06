@@ -8,7 +8,7 @@
   overflow: auto;
 }
 
-#container {
+#container, #main {
 	margin: 0 auto;
 	max-width: 1040px;
 }
@@ -59,7 +59,6 @@ h2, h3, h4, h5 {
   font-size: 14px;
   color: #28666e;
   line-height: 16px;
-  float: left;
 }
 
 .location-text {
@@ -67,7 +66,6 @@ h2, h3, h4, h5 {
   font-size: 14px;
   color: #28666e;
   line-height: 16px;
-  float: right;
 
 }
 
@@ -89,12 +87,11 @@ a {
   padding: 20px 0 20px 0;
   font-size: 25px;
   color: #b5b682;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 #skillsH3 {
   color: #fedc97;
-  display: none;
 }
 
 .orange {
@@ -226,8 +223,22 @@ em {
   .biopic {
     width: 150px;
   }
+  h1 {
+	font-size: 30px;
+	line-height: 36px;
+  }
+
   .welcome-message {
-    display: none;
+	font-size: 18px;
+	line-height: 25px;
+  }
+  
+  .flex-box {
+	padding: 0 0 10px 0;
+  }
+  
+  #skillsH3 {
+	padding: 15px 0 2px 0;
   }
 }
 
@@ -245,7 +256,6 @@ em {
 }
 
 @media only screen and (min-width: 750px) {
-  #skillsH3,
   .biopic {
     display: block;
   }
