@@ -27,7 +27,7 @@ The 'resumeBuilder.js' file currently contains my resume information. To change 
 
 Running the code
 ----------------
-The results of the tests can be seen by simply opening the index.html file on a browser.
+To display the resume simply open the index.html file on a browser.
 
 
 Documentation
