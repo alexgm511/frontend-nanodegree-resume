@@ -17,7 +17,9 @@ $(function(){
 				"Web Development",
 				"Design",
 				"Infographics",
-				"Illustration"
+				"Illustration",
+				"Fluent in English & Spanish",
+				"&nbsp;&nbsp;proficient in French"
 				]
 		},
 		education: {
@@ -117,7 +119,7 @@ $(function(){
     };
 
 
-    var octopus = {
+    var presenter = {
 		getBio: function() {
 			return model.bio;
 		},
@@ -146,7 +148,7 @@ $(function(){
 
 			// This next line makes `map` a new Google Map JavaScript Object and attaches it to
 			// <div id="map">, which is appended as part of an exercise late in the course.
-			model.map = new google.maps.Map(octopus.getMapElement(), mapOptions);
+			model.map = new google.maps.Map(presenter.getMapElement(), mapOptions);
 
 			/* locationFinder() returns an array of every location string from the JSONs
 			written for bio, education, and work. */
@@ -313,7 +315,7 @@ $(function(){
 			var googleMap = '<div id="map"></div>';			
 			
 			// Get bio information, format and append to the page
-			var $bio = octopus.getBio();
+			var $bio = presenter.getBio();
 			var formattedName = HTMLheaderName.replace("%data%", $bio.name);
 			var formattedRole = HTMLheaderRole.replace("%data%", $bio.role)
 			$("#header").prepend(formattedRole)
@@ -362,7 +364,7 @@ $(function(){
 				}
 			}
 
-			var $schools = octopus.getEducation(); //
+			var $schools = presenter.getEducation(); //
 			for (school in $schools) {
 				$('#education').append(HTMLschoolStart);
 				var formattedSchool = HTMLschoolName.replace("%data%", $schools[school].name);
@@ -380,7 +382,7 @@ $(function(){
 				$('.education-entry:last').append(clearFloats);
 			}
 				
-			var $jobs = octopus.getWork(); //
+			var $jobs = presenter.getWork(); //
 			for (job in $jobs) {
 				$('#workExperience').append(HTMLworkStart);
 				var formattedEmployer = HTMLworkEmployer.replace("%data%", $jobs[job].employer);
@@ -398,7 +400,7 @@ $(function(){
 				$('.work-entry:last').append(clearFloats);
 			}
 			
-			var $projects = octopus.getProjects();  //
+			var $projects = presenter.getProjects();  //
 			for (project in $projects) {
 				$('#projects').append(HTMLprojectStart);
 				var formattedTitle = HTMLprojectTitle.replace("%data%", $projects[project].title);
@@ -419,7 +421,7 @@ $(function(){
 			$('#mapDiv').append(googleMap);
 
 			// Calls the initializeMap() function when the page loads
-			window.addEventListener('load', octopus.initializeMap);
+			window.addEventListener('load', presenter.initializeMap);
 
 			// Vanilla JS way to listen for resizing of the window
 			// and adjust map bounds
@@ -457,5 +459,5 @@ $(function(){
 		
     };
 
-    octopus.init();
+    presenter.init();
 });
